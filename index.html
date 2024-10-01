@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory System</title>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; }
+        .car-list { margin-top: 20px; }
+        .car-item { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>Car Inventory System</h1>
+    <form id="car-form">
+        <input type="text" id="car-name" placeholder="Car Name" required>
+        <input type="text" id="car-model" placeholder="Car Model" required>
+        <input type="number" id="car-year" placeholder="Manufacture Year" required>
+        <input type="number" id="car-price" placeholder="CarPrice" required>
+        <button type="submit">Add Car</button>
+    </form>
+    
+    <div class="car-list" id="car-list"></div>
+    
+    <button id="total-price-btn">Calculate Total Price After Depreciation</button>
+    <div id="total-price"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
